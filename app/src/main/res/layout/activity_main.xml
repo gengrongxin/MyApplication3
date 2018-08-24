@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toobar"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="23px"
+            android:layout_height="39px"
+            android:background="@mipmap/arrow_left2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="充值提交"
+            android:textSize="30px"
+            tools:ignore="MissingConstraints" />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/mDing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:text="订单信息"
+        android:textColor="#333"
+        android:textSize="24px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toobar"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/mJin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:text="应付金额："
+        android:textColor="#999"
+        android:textSize="28px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mDing" />
+
+    <TextView
+        android:id="@+id/mLiu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:text="￥600"
+        android:textColor="#333"
+        android:textSize="28px"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mJin"
+        app:layout_constraintLeft_toRightOf="@+id/mJin" />
+
+    <TextView
+        android:id="@+id/mDan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:text="订单信息："
+        android:textColor="#999"
+        android:textSize="28px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mJin" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:text="充值600金币"
+        android:textColor="#333"
+        android:textSize="28px"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mDan"
+        app:layout_constraintLeft_toRightOf="@+id/mDan"
+        app:layout_constraintTop_toBottomOf="@id/mLiu"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/mZhi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:text="选择支付方式"
+        android:textColor="#999"
+        android:textSize="28px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mDan" />
+
+    <ImageView
+        android:id="@+id/mZhiFu"
+        android:layout_width="72px"
+        android:layout_height="72px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:src="@mipmap/icon_chongzhitijiao_zhifubao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mZhi" />
+
+    <TextView
+        android:id="@+id/mBao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28px"
+        android:layout_marginTop="42px"
+        android:text="支付宝支付"
+        android:textColor="#333"
+        android:textSize="32px"
+        app:layout_constraintLeft_toRightOf="@id/mZhiFu"
+        app:layout_constraintTop_toBottomOf="@id/mZhi" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="44px"
+        android:layout_height="44px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="38px"
+        android:src="@mipmap/icon_sousuo_close"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v1" />
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="42px"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/mBao" />
+
+    <ImageView
+        android:id="@+id/mWei"
+        android:layout_width="72px"
+        android:layout_height="72px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:src="@mipmap/icon_chongzhitijiao_wechats"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v1" />
+
+    <TextView
+        android:id="@+id/mWeiXin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42px"
+        android:layout_marginLeft="28px"
+        android:layout_marginTop="42px"
+        android:text="微信支付"
+        android:textColor="#333"
+        android:textSize="32px"
+        app:layout_constraintLeft_toRightOf="@+id/mWei"
+        app:layout_constraintTop_toBottomOf="@id/v1" />
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="44px"
+        android:layout_height="44px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="30px"
+        android:src="@mipmap/iocn_gou_selected"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mZhi" />
+
+    <View
+        android:id="@+id/v2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/mWeiXin"
+        android:background="#FFFFFF"
+        android:layout_marginTop="42px" />
+
+    <ImageView
+        android:id="@+id/mLian"
+        android:layout_width="72px"
+        android:layout_height="72px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:src="@mipmap/icon_chongzhitijiao_lianlian"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v2" />
+
+    <TextView
+        android:id="@+id/mLianZhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28px"
+        android:layout_marginTop="42px"
+        android:text="连连支付"
+        android:textColor="#333"
+        android:textSize="32px"
+        app:layout_constraintLeft_toRightOf="@+id/mLian"
+        app:layout_constraintTop_toBottomOf="@id/v2" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="44px"
+        android:layout_height="44px"
+        android:layout_marginTop="38px"
+        android:layout_marginRight="30px"
+        android:src="@mipmap/icon_sousuo_close"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v2" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="30px"
+        android:layout_height="30px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/icon_chongzhichenggong"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mLian" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:text="我已阅读并同意遵守《充值协议》并愿意承担相关风险"
+        android:textColor="#999"
+        android:textSize="24px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mLian" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@drawable/shape"
+        android:text="立即支付"
+        android:textColor="#fff"
+        android:textSize="36px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image" />
+</android.support.constraint.ConstraintLayout>
